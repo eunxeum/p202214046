@@ -1,12 +1,9 @@
 package p202214046;
-
 public class Hello {
 
-    public static int sum(int n) {
-      int result = 0;
-      for (int i = 1; i <= n; ++i)
-        result += i;
-      return result;
-    }
-  }
+	  public static int sum(int n) {
+	    return (n == 1) ? 1 : n + sum(n - 1);
+	  }
+	}
+
   
